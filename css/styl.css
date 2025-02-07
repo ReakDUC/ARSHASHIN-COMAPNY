@@ -1,0 +1,57 @@
+.navmenu .nav-item .nav-link{
+    color: white;
+}
+
+.navmenu .nav-item .nav-link:hover{
+  transition: 1s;
+  color: orange;
+}
+
+
+
+.hero .animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  }
+
+@keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+  
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+
+
+
+/* about section */
+.about .about-main .faq-item{
+  transition: transform 0.2s;
+  background-color: #f2f2f2;
+}
+.about .about-main .faq-item:hover{
+  transform: scale(1.05);
+  
+
+}
+
+/* service section */
+.service .card-service {
+  transition: transform 0.2s;
+}
+.service .card-service:hover{
+  transform: scale(1.05);
+  color: blue;
+}
+
+/* footer section */
+.footer .social-links .border:hover {
+  background-color: black;
+  transform: scale(1.2);
+
+}
+.footer .social-links .border {
+  transition: transform 0.2s;
+
+}

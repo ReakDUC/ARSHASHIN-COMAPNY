@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework1</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Font Awesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body{
+        background-image: url(../asset/img/form1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .signin-container {
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+    .signin-box {
+      display: flex;
+      width: 70%;
+      max-width: 900px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .signin-form {
+      flex: 1;
+      padding: 40px;
+    }
+    .signin-welcome {
+      flex: 1;
+      background-color: rgb(11, 117, 64);
+      color: white;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .signin-welcome a {
+        border-radius: 30px;
+        color: white;
+    }
+    .signin-welcome h2 {
+      font-weight: bold;
+    }
+    .signin-welcome p {
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+    .signin-welcome .btn {
+      /* background-color: white; */
+      box-shadow: 0.1px 1px 1.5px 1.5px rgba(0, 0, 0, 0.3);
+      margin-top: 20px;
+      padding: 7px 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container signin-container">
+    <div class="signin-box ">
+      <!-- Left side: Signin form -->
+      <div class="signin-form bg-light opacity-75">
+        <h2 class="text-center mb-4">Signup</h2>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="username" placeholder="username" />
+          </div>
+          <div class="mb-3">
+            <input type="password" class="form-control" id="password" placeholder="Enter your password"/>
+          </div>
+          <div class="mb-3">
+            <input type="password" class="form-control" id="password" placeholder="Confirm your password"/>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" id="email" placeholder="Enter email address">
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-success">Signin</button>
+          </div>
+        </form>
+        <p class="text-center mt-3">or signin with</p>
+        <div class="d-flex justify-content-center gap-3">
+            <!-- Facebook Button -->
+            <button class="btn btn-primary rounded-circle" style="width: 40px; height: 38px;">
+              <i class="fab fa-facebook-f"></i>
+            </button>
+            <!-- Google Button -->
+            <button class="btn btn-danger rounded-circle" style="width: 40px; height: 38px;">
+              <i class="fab fa-google"></i>
+            </button>
+            <!-- LinkedIn Button -->
+            <button class="btn btn-info rounded-circle" style="width: 40px; height: 38px;">
+              <i class="fab fa-linkedin-in"></i>
+            </button>
+          </div>
+      </div>
+
+      <!-- Right side: Welcome message -->
+      <div class="signin-welcome">
+        <h2>Welcome back!</h2>
+        <p>Welcome back to ARSHASHIN! We are so happy to have you here. it's great to see you again. We hope you had a safe and enjoyable time away.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
